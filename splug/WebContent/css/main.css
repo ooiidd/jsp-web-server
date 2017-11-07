@@ -1,0 +1,276 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css); 
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css); 
+
+/*********************************메인페이지****************************/
+/*메뉴바 및 로고*/
+	body{
+		min-width:1024px;
+		margin:0 auto;
+		max-width:1600px;
+		width:100%;
+	}
+	.logo{
+		padding-top:5px;
+		display:inline;
+		float:left;
+		height:45px;
+		position:center;
+		text-decoration:none;
+		text-align:center;
+		margin-right:50px;
+		margin-left:20px;
+	}
+	.logo h2{
+		color:white;
+		display:inline;
+		font-size:25pt;
+		text-shadow:0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;
+	}
+	.logo a{
+		color:black;
+		text-decoration:none;
+	}
+	#header{
+	margin:0
+	}
+
+
+.angle{	
+	margin-left:50%;
+	background-color:transparent;
+	height:0px;
+	width:0px;
+	border: 10px solid black;
+	border-top-width:0px;
+  	border-right-color: transparent;
+   	border-left-color: transparent;
+}
+
+	#nav{
+		font-family:'Jeju Hallasan';
+		list-style-type:none;
+		height:40px;
+		padding:6px 7px;
+		margin:0px 20px;
+		background:rgb(1,93,168);
+		border-radius:1.5em;
+	}
+	#main_img{
+		float:left;
+		height:45px;
+	}
+	#nav li{
+		float:left;
+		position:relative;
+		margin:5px 10px;
+		padding:0;
+	}
+	#nav li a{
+		display:block;
+		font-family:'Jeju Gothic';
+		font-weight:600;
+		font-size:1em;
+		padding:10px 20px;
+		color:white;
+		text-decoration:none;
+		margin:0;
+		border-radius:1.4em;
+		text-shadow:0 1px 1px rgba(0,0,0,.3);
+	}
+	#nav li:hover > a{
+		color:black;
+		transition-duration:0.5s;
+	}
+	
+	#nav ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		position:absolute;
+		left:0;
+		top:30px;
+		width:150px;
+		opacity:0;
+	}
+	
+	#nav ul li{
+		background:black;
+		float:none;
+		margin:0;
+		padding:0;
+		height:0;
+		overflow:hidden;
+	}
+	
+	#nav li:hover ul{
+		opacity:1;
+	}
+	#nav li:hover ul li{
+		height:35px;
+		overflow:visible;
+		padding:0;
+		transition-duration:0.5s;
+	}
+	#nav ul a{
+		font-weight:normal;
+		text-shadow:0 1px 0 #000000;
+		color:white;
+	}
+	#nav ul li:hover > a{
+	//	background:#ff4400;
+		color:rgb(1,93,168);
+	//	text-shadow:0 1px 1px rgba(0,0,0,0.1);
+		border-radius:0;
+	}
+	#nav ul li:first-child > a{
+		border-top-left-radius:8px;
+		border-top-right-radius:8px;
+	}
+	#nav ul li:last-child > a{
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
+	}
+	section{
+		float:left;
+		margin-left:20px;
+	}
+	section table{
+		border-spacing:20px 10px;
+	}
+	.rightside{
+		float:right;
+		width: 100;
+	}
+	.id{
+		border-radius:0.4em;
+		float:right;
+		padding:5px;
+		margin-right:20px;
+		margin-top : 10px;
+		border:0.5px solid #c0c0c0;
+	}
+	.log{
+		border-radius:0.4em;
+		float:right;
+		padding:5px;
+		margin-right:20px;
+		margin-top : 10px;
+		border:0.5px solid #c0c0c0;
+	}
+	.id form input{
+		width:150px;
+		height: 30px;
+		font-family:'Jeju Gothic';
+		text-align: center;
+	}
+	.id div{
+		margin-top:5px;
+		text-align:center;
+	}
+	.id div p{
+		display:none;
+	}
+
+	.log_join{
+		font-size:13px;
+		font-family:'Jeju Gothic';
+		display:table;
+		margin-top:20px;
+		background-color:rgb(1,93,168);	
+		width:260px;
+		height:40px;
+		vertical-align: center;
+	}
+	.log_join a{
+		margin:0 auto;
+		text-align:center;
+		text-decoration:none;
+		font-size:12pt;
+		color:white;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#log1{
+		display:block;
+	}
+	#login{
+		font-size:13px;
+		border:0;
+		background-color:rgb(1,93,168);
+		float:right;
+		position:relative;
+		width:100px;
+		margin-top:-37px;
+		height:72px;
+		color:white;
+	}
+	
+	
+	/**********************익명게시판********************/
+	/*리스트*/
+	
+	section{
+		//border:0.5px solid #c0c0c0;
+		padding-top:20px;
+		width:700px;
+		float:left;
+		margin-right:100px;
+	}
+	.boardName{
+		width:100%;
+		height:30px;
+	}
+	.boardName a{
+		font-family:'Jeju Gothic';
+		color : rgb(1,93,168);
+		font-size:20px;
+	}
+	#boardInfo th{
+		height:40px;
+		background-color:rgb(1,93,168);
+		color:white;
+		border: 0px solid red;
+		
+	}
+	.boardlist{
+		border-collapse: collapse;
+		border:0.5px solid #c0c0c0;
+		width : 100%;
+	
+	}
+	.pageMove{
+		width : 100%;
+		text-align:center;
+		border:0px solid #c0c0c0;
+		height:20px;
+	}
+	
+	.record{
+		height:30px;
+		border:0.5px solid #c0c0c0;
+	}
+	#recordNum{
+		text-decoration:none;
+		text-align:center;
+		color:rgb(190,190,190);
+		font-size:12px;
+	}
+	#recordTitle a{
+		text-decoration:none;
+		text-align:left;
+		color:black;
+		font-size:15px;
+	}
+	#recordDate{
+		text-decoration:none;
+		text-align:center;
+		font-size:15px;
+	}
+	#recordCount{
+		text-decoration:none;
+		text-align:center;
+		color:rgb(190,190,190);
+		font-size:12px;
+	}
+
+	
